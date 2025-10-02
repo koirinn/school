@@ -1,17 +1,52 @@
 def create(): #создать
     note = input("Введите текст заметки: ")
-    with open("notes.txt", "a") as file:
-        file.write(note)
+    with open("notes.txt", "a", encoding="utf-8") as file:
+        file.write(note + "\n")
     print("Заметка успешно добавлена!")
+    print()
 
 
 
 def delete(): #удалить
-    pass
+    with open("notes.txt", "r", encoding="utf-8") as file:
+            notes = file.readlines()
+        
+    if not notes:
+        print("Список заметок пуст.")
+    else:
+        note_num = int(input("Введите номер заметки для удаления: "))
+        if 1 <= note_num <= len(notes):
+            del notes[note_num - 1]
+            
+            with open("notes.txt", "w", encoding="utf-8") as file:
+                file.writelines(notes)
+            print("Заметка успешно удалена.")
+        else:
+            print("Неверный номер заметки.")
+    print()
 
 
 def search(): #найти
-    pass
+    with open("notes.txt", "r", encoding="utf-8") as file:
+            notes = file.readlines()
+        
+    if not notes:
+        print("Список заметок пуст.")
+    else:
+        keyword = input("Введите текст для поиска: ").lower()
+        found = []
+        
+        for i, note in enumerate(notes, 1):
+            if keyword in note.lower():
+                found.append((i, note))
+        
+        if found:
+            print("Найденные заметки:")
+            for i, text in found:
+                print(f"{i}: {text}")
+        else:
+            print("Заметки не найдены.")
+        print()
 
 
 def close(): #закрыть
