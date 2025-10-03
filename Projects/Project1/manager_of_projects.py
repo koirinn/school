@@ -14,6 +14,7 @@ def delete(): #удалить
     if not notes:
         print("Список заметок пуст.")
     else:
+        show()
         note_num = int(input("Введите номер заметки для удаления: "))
         if 1 <= note_num <= len(notes):
             del notes[note_num - 1]
@@ -63,7 +64,7 @@ def show(): # показать
     else:
         print("Текущие заметки:")
         for i, note in enumerate(notes, 1):
-            print(f"{i}:  {note.strip()}")
+            print(f"{i}:  {note}")
     print()
 
 def interface(): # интерфейс
