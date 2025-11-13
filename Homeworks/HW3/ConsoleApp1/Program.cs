@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.PortableExecutable;
 
 class Polynomial
 {
@@ -48,9 +49,10 @@ class Polynomial
         // return "";
 
 
-        if (coeffs.Length == 0)
+        if (coeffs.Length == 0){
             return "0";
-
+        }
+        
         string result = "";
         bool firstSign = true;
 
@@ -64,25 +66,12 @@ class Polynomial
 
             if (!firstSign)
             {
-                if (coeffs[i] > 0)
-                {
-                    sign = " + ";
-                }
-                else
-                {
-                    sign = " - ";
-                }
+
+                sign = coeffs[i] > 0 ? " + " : " - ";
             }
             else
             {
-                if (coeffs[i] < 0)
-                {
-                    sign = " - ";
-                }
-                else
-                {
-                    sign = "";
-                }
+                sign = coeffs[i] < 0 ? " - " : "";
                 firstSign = false;
             }
 
@@ -93,25 +82,11 @@ class Polynomial
             }
             else if (i == 1)
             {
-                if (absCoeff == 1)
-                {
-                    variablePart = "x";
-                }
-                else
-                {
-                    variablePart = $"{absCoeff}x";
-                }
+                variablePart = absCoeff == 1 ? "x" : $"{absCoeff}x";
             }
             else
             {
-                if (absCoeff == 1)
-                {
-                    variablePart = $"x^{i}";
-                }
-                else
-                {
-                    variablePart = $"{absCoeff}x^{i}";
-                }
+                variablePart = absCoeff == 1 ? $"x^{i}" : $"{absCoeff}x^{i}";
             }
 
             result += sign + variablePart;
@@ -122,15 +97,70 @@ class Polynomial
 
         return result;
     }
+
+    public static Polynomial operator +(Polynomial obj1, Polynomial obj2)
+    {
+        double[] coeffs1 = obj1.Coeffs;
+        double[] coeffs2 = obj2.Coeffs;
+
+        if (coeffs1.Length < coeffs2.Length)
+        {
+            double[] coeffs3 = coeffs2;
+            for (int i = 0; i < coeffs2.Length; i++)
+            {
+                if (i < coeffs1.Length)
+                {
+                    coeffs3[i] += coeffs1[i];
+
+                }
+            }
+            Polynomial obj3 = new Polynomial(coeffs3);
+            return obj3;
+        }
+        else
+        {
+            double[] coeffs3 = coeffs1;
+            for (int i = 0; i < coeffs1.Length; i++)
+            {
+                if (i < coeffs1.Length)
+                {
+                    coeffs3[i] += coeffs2[i];
+
+                }
+            }
+            Polynomial obj3 = new Polynomial(coeffs3);
+            return obj3;
+        }
+
+    }
+
+    public static Polynomial operator * (Polynomial obj1, double k)
+    {
+        double[] coeffs1 = obj1.Coeffs;
+        double[] coeffs2 = coeffs1;
+
+        for(int i = 0; i < coeffs1.Length; i++)
+        {
+            coeffs2[i] *= k;
+        }
+        Polynomial obj2 = new Polynomial(coeffs2);
+        return obj2;
+    }
 }
 
 class Programm
 {
     static void Main(string[] args)
     {
-        double[] coeffs = { 1.0, 0.0, 2.0 };
-        Polynomial p = new Polynomial(coeffs); // 1 + 2x^2
+        double[] coeffs1 = { 1.0, 0.0, 2.0 };
+        double[] coeffs2 = { 1.0, 2.0, 3.0, 4.0, 5.0 };
+        Polynomial p1 = new Polynomial(coeffs1); // 1 + 2x^2
+        Polynomial p2 = new Polynomial(coeffs2); // 1 + 2x + 3x^2 + 4x^3 + 5x^4
 
-        Console.WriteLine(p);
+        Console.WriteLine(p1);
+        Console.WriteLine(p2);
+
+        Console.WriteLine(p1 + p2);
+        Console.WriteLine(p2 * 5);
     }
 }
