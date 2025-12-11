@@ -1,0 +1,15 @@
+E:\школа\ТПП\Classworks\animals\bin\Debug\net9.0\animals.exe
+E:\школа\ТПП\Classworks\animals\bin\Debug\net9.0\animals.deps.json
+E:\школа\ТПП\Classworks\animals\bin\Debug\net9.0\animals.runtimeconfig.json
+E:\школа\ТПП\Classworks\animals\bin\Debug\net9.0\animals.dll
+E:\школа\ТПП\Classworks\animals\bin\Debug\net9.0\animals.pdb
+E:\школа\ТПП\Classworks\animals\obj\Debug\net9.0\animals.GeneratedMSBuildEditorConfig.editorconfig
+E:\школа\ТПП\Classworks\animals\obj\Debug\net9.0\animals.AssemblyInfoInputs.cache
+E:\школа\ТПП\Classworks\animals\obj\Debug\net9.0\animals.AssemblyInfo.cs
+E:\школа\ТПП\Classworks\animals\obj\Debug\net9.0\animals.csproj.CoreCompileInputs.cache
+E:\школа\ТПП\Classworks\animals\obj\Debug\net9.0\animals.sourcelink.json
+E:\школа\ТПП\Classworks\animals\obj\Debug\net9.0\animals.dll
+E:\школа\ТПП\Classworks\animals\obj\Debug\net9.0\refint\animals.dll
+E:\школа\ТПП\Classworks\animals\obj\Debug\net9.0\animals.pdb
+E:\школа\ТПП\Classworks\animals\obj\Debug\net9.0\animals.genruntimeconfig.cache
+E:\школа\ТПП\Classworks\animals\obj\Debug\net9.0\ref\animals.dll

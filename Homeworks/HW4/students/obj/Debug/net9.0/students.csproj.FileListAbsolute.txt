@@ -1,0 +1,15 @@
+E:\школа\ТПП\Homeworks\HW4\students\bin\Debug\net9.0\students.exe
+E:\школа\ТПП\Homeworks\HW4\students\bin\Debug\net9.0\students.deps.json
+E:\школа\ТПП\Homeworks\HW4\students\bin\Debug\net9.0\students.runtimeconfig.json
+E:\школа\ТПП\Homeworks\HW4\students\bin\Debug\net9.0\students.dll
+E:\школа\ТПП\Homeworks\HW4\students\bin\Debug\net9.0\students.pdb
+E:\школа\ТПП\Homeworks\HW4\students\obj\Debug\net9.0\students.GeneratedMSBuildEditorConfig.editorconfig
+E:\школа\ТПП\Homeworks\HW4\students\obj\Debug\net9.0\students.AssemblyInfoInputs.cache
+E:\школа\ТПП\Homeworks\HW4\students\obj\Debug\net9.0\students.AssemblyInfo.cs
+E:\школа\ТПП\Homeworks\HW4\students\obj\Debug\net9.0\students.csproj.CoreCompileInputs.cache
+E:\школа\ТПП\Homeworks\HW4\students\obj\Debug\net9.0\students.sourcelink.json
+E:\школа\ТПП\Homeworks\HW4\students\obj\Debug\net9.0\students.dll
+E:\школа\ТПП\Homeworks\HW4\students\obj\Debug\net9.0\refint\students.dll
+E:\школа\ТПП\Homeworks\HW4\students\obj\Debug\net9.0\students.pdb
+E:\школа\ТПП\Homeworks\HW4\students\obj\Debug\net9.0\students.genruntimeconfig.cache
+E:\школа\ТПП\Homeworks\HW4\students\obj\Debug\net9.0\ref\students.dll

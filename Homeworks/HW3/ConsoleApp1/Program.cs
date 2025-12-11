@@ -105,7 +105,7 @@ class Polynomial
 
         if (coeffs1.Length < coeffs2.Length)
         {
-            double[] coeffs3 = coeffs2;
+            double[] coeffs3 = (double[])coeffs2.Clone();
             for (int i = 0; i < coeffs2.Length; i++)
             {
                 if (i < coeffs1.Length)
@@ -119,7 +119,7 @@ class Polynomial
         }
         else
         {
-            double[] coeffs3 = coeffs1;
+            double[] coeffs3 = (double[])coeffs1.Clone();
             for (int i = 0; i < coeffs1.Length; i++)
             {
                 if (i < coeffs1.Length)
@@ -137,7 +137,7 @@ class Polynomial
     public static Polynomial operator * (Polynomial obj1, double k)
     {
         double[] coeffs1 = obj1.Coeffs;
-        double[] coeffs2 = coeffs1;
+        double[] coeffs2 = (double[])coeffs1.Clone();
 
         for(int i = 0; i < coeffs1.Length; i++)
         {
@@ -146,6 +146,79 @@ class Polynomial
         Polynomial obj2 = new Polynomial(coeffs2);
         return obj2;
     }
+
+    public static Polynomial operator * (double k, Polynomial obj1)
+    {
+        return obj1 * k;
+    }
+
+    public static Polynomial operator * (Polynomial obj1, Polynomial obj2)
+    {
+        double[] coeffs1 = obj1.Coeffs;
+        double[] coeffs2 = obj2.Coeffs;
+
+        if(coeffs1.Length < coeffs2.Length)
+        {
+            double[] coeffs3 = (double[])coeffs2.Clone();
+            for(int i = 0; i < coeffs1.Length; i++)
+            {
+                for(int j = 0; j < coeffs2.Length; j++)
+                {
+                    coeffs3[j] *= coeffs1[i];
+                }
+            }
+            Polynomial obj3 = new Polynomial(coeffs3);
+            return obj3;
+        }
+        else
+        {
+            double[] coeffs3 = (double[])coeffs1.Clone();
+            for(int i = 0; i < coeffs2.Length; i++)
+            {
+                for(int j = 0; j < coeffs1.Length; j++)
+                {
+                    coeffs3[j] *= coeffs2[i];
+                }
+            }
+            Polynomial obj3 = new Polynomial(coeffs3);
+            return obj3;
+        }
+    }
+
+    public double Evaluate(double x)
+    {
+        double res = 0;
+
+        if(this.coeffs.Length == 0)
+        {
+            return 0;
+        }
+
+        for(int i = 0; i < this.coeffs.Length; i++)
+        {
+            if(i == 0)
+            {
+                res += this.coeffs[i];
+            }
+            if(i == 1)
+            {
+                if(this.coeffs[i] == 0)
+                {
+                    continue;
+                }
+                res += this.coeffs[i] * x;
+            }
+            if(i > 1)
+            {
+                if(this.coeffs[i] == 0)
+                {
+                    continue;
+                }
+                res += this.coeffs[i]* Math.Pow(x, i);
+            }
+        }
+        return res;
+    }
 }
 
 class Programm
@@ -153,7 +226,7 @@ class Programm
     static void Main(string[] args)
     {
         double[] coeffs1 = { 1.0, 0.0, 2.0 };
-        double[] coeffs2 = { 1.0, 2.0, 3.0, 4.0, 5.0 };
+        double[] coeffs2 = { 1.0, 2.0, 3.0};
         Polynomial p1 = new Polynomial(coeffs1); // 1 + 2x^2
         Polynomial p2 = new Polynomial(coeffs2); // 1 + 2x + 3x^2 + 4x^3 + 5x^4
 
@@ -161,6 +234,9 @@ class Programm
         Console.WriteLine(p2);
 
         Console.WriteLine(p1 + p2);
-        Console.WriteLine(p2 * 5);
+        Console.WriteLine(5 * p2);
+
+        Console.WriteLine(p1.Evaluate(3));
+        Console.WriteLine(p1 * p2);
     }
 }
