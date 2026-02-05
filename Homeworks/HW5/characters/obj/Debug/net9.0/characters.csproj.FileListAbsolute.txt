@@ -1,0 +1,15 @@
+E:\школа\ТПП\Homeworks\HW5\characters\bin\Debug\net9.0\characters.exe
+E:\школа\ТПП\Homeworks\HW5\characters\bin\Debug\net9.0\characters.deps.json
+E:\школа\ТПП\Homeworks\HW5\characters\bin\Debug\net9.0\characters.runtimeconfig.json
+E:\школа\ТПП\Homeworks\HW5\characters\bin\Debug\net9.0\characters.dll
+E:\школа\ТПП\Homeworks\HW5\characters\bin\Debug\net9.0\characters.pdb
+E:\школа\ТПП\Homeworks\HW5\characters\obj\Debug\net9.0\characters.GeneratedMSBuildEditorConfig.editorconfig
+E:\школа\ТПП\Homeworks\HW5\characters\obj\Debug\net9.0\characters.AssemblyInfoInputs.cache
+E:\школа\ТПП\Homeworks\HW5\characters\obj\Debug\net9.0\characters.AssemblyInfo.cs
+E:\школа\ТПП\Homeworks\HW5\characters\obj\Debug\net9.0\characters.csproj.CoreCompileInputs.cache
+E:\школа\ТПП\Homeworks\HW5\characters\obj\Debug\net9.0\characters.sourcelink.json
+E:\школа\ТПП\Homeworks\HW5\characters\obj\Debug\net9.0\characters.dll
+E:\школа\ТПП\Homeworks\HW5\characters\obj\Debug\net9.0\refint\characters.dll
+E:\школа\ТПП\Homeworks\HW5\characters\obj\Debug\net9.0\characters.pdb
+E:\школа\ТПП\Homeworks\HW5\characters\obj\Debug\net9.0\characters.genruntimeconfig.cache
+E:\школа\ТПП\Homeworks\HW5\characters\obj\Debug\net9.0\ref\characters.dll
