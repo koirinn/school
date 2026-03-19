@@ -1,0 +1,15 @@
+E:\школа\ТПП\Projects\Project2\Escape The Flat\escape the flat\bin\Debug\net9.0\escape the flat.exe
+E:\школа\ТПП\Projects\Project2\Escape The Flat\escape the flat\bin\Debug\net9.0\escape the flat.deps.json
+E:\школа\ТПП\Projects\Project2\Escape The Flat\escape the flat\bin\Debug\net9.0\escape the flat.runtimeconfig.json
+E:\школа\ТПП\Projects\Project2\Escape The Flat\escape the flat\bin\Debug\net9.0\escape the flat.dll
+E:\школа\ТПП\Projects\Project2\Escape The Flat\escape the flat\bin\Debug\net9.0\escape the flat.pdb
+E:\школа\ТПП\Projects\Project2\Escape The Flat\escape the flat\obj\Debug\net9.0\escape the flat.GeneratedMSBuildEditorConfig.editorconfig
+E:\школа\ТПП\Projects\Project2\Escape The Flat\escape the flat\obj\Debug\net9.0\escape the flat.AssemblyInfoInputs.cache
+E:\школа\ТПП\Projects\Project2\Escape The Flat\escape the flat\obj\Debug\net9.0\escape the flat.AssemblyInfo.cs
+E:\школа\ТПП\Projects\Project2\Escape The Flat\escape the flat\obj\Debug\net9.0\escape the flat.csproj.CoreCompileInputs.cache
+E:\школа\ТПП\Projects\Project2\Escape The Flat\escape the flat\obj\Debug\net9.0\escape the flat.sourcelink.json
+E:\школа\ТПП\Projects\Project2\Escape The Flat\escape the flat\obj\Debug\net9.0\escape the flat.dll
+E:\школа\ТПП\Projects\Project2\Escape The Flat\escape the flat\obj\Debug\net9.0\refint\escape the flat.dll
+E:\школа\ТПП\Projects\Project2\Escape The Flat\escape the flat\obj\Debug\net9.0\escape the flat.pdb
+E:\школа\ТПП\Projects\Project2\Escape The Flat\escape the flat\obj\Debug\net9.0\escape the flat.genruntimeconfig.cache
+E:\школа\ТПП\Projects\Project2\Escape The Flat\escape the flat\obj\Debug\net9.0\ref\escape the flat.dll
